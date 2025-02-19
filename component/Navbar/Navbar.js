@@ -1,5 +1,5 @@
 import CreateElement from "../../helper/CreateElement.js"
-import {NavbarContent} from "../../conteNt/navbarContent.js"
+import {NavbarContent} from "../../content/navbarContent.js"
 import {NavbarFunc} from "./NavbarFunc.js"
 
 function Navbar(container){
