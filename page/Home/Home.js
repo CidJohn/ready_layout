@@ -21,7 +21,7 @@ const contentDiv = sampleText.div(bodyDiv, "", [
    "overflow-y-hidden"
 ]);
 
-const home = sampleText.div(contentDiv,"",["h-full","flex","flex-col","gap-2"]);
+const home = sampleText.div(contentDiv,"",["h-full","flex","flex-col","gap-2",'p-2']);
 Profile(home);
 
 const footerDiv = sampleText.div(secDiv,"",[
