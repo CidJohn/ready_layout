@@ -5,7 +5,7 @@ export const sidebarContent = [
 			{
 				parent:"Home",
 				path:"",
-				classGroup:["font-bold","pl-2"],
+				classGroup:["hidden","font-bold","pl-2","md:block"],
 				children:[
 					{
 						to:"/",
@@ -14,6 +14,14 @@ export const sidebarContent = [
 					{
 						to:"/",
 						name:"Second Child"
+					},
+					{
+						to:"/",
+						name:"Third Child"
+					},
+					{
+						to:"/",
+						name:"Fourth Child"
 					}
 				]
 			},

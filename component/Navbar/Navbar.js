@@ -17,10 +17,10 @@ function Navbar(container){
 					span.textContent = img.txtName;
 				})
 		})
-		item.hbIcon.forEach((hum) => {
+		item.hbIcon.map((hum) => {
 				const button = cElem.dynoDiv(div_icons,"button","",hum.classGroup);
 				button.id = hum.id;
-			    hum.btn.forEach((btnData) => {
+			    hum.btn.map((btnData) => {
 				    const btnWrapper = cElem.dynoDiv(button, "span", "",[...btnData.classGroup]);
 				    btnWrapper.innerHTML = btnData.imgURL
 			    });

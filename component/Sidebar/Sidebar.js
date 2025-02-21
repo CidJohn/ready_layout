@@ -14,10 +14,10 @@ function Sidebar(container){
 				const divParent = createElem.div(divCont,"",line.classGroup);
 				const spanParent = createElem.dynoDiv(divParent,"span","",[]);
 				spanParent.textContent = line.parent;
-				const ulChild = createElem.dynoDiv(divCont,"ul","",["flex","md:flex-col","indent-8",]);
+				const ulChild = createElem.dynoDiv(divCont,"ul","",["flex","md:flex-col","indent-8","overflow-x-scroll","max-w-[90vw]", "md:overflow-x-hidden"]);
 				line.children.map((child) => {
-					const liChild = createElem.dynoDiv(ulChild,"li","",[])
-					const link = createElem.dynoDiv(liChild,"a","",[]);
+					const liChild = createElem.dynoDiv(ulChild,"li","",["w-[25vw]"])
+					const link = createElem.dynoDiv(liChild,"a","",["flex","w-100"]);
 					link.href = child.to;
 					link.textContent = child.name;
 				})

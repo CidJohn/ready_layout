@@ -7,7 +7,7 @@ function router(main){
 	const elem = new CreateElement();
 	Navbar(main);
 	const container = elem.div(main,"",[]);
-	const cont = elem.div(container,"",["w-full","grid","md:grid-cols-[250px_1fr]" ,"min-h-[90vh]","gap-1"]);
+	const cont = elem.div(container,"",["w-full","grid","md:grid-cols-[250px_1fr]" ,"min-h-[90vh]"]);
 	
 	const navigate = () => {
 		const path = window.location.hash.replace("#","")|| "/";

@@ -1,5 +1,6 @@
 import CreateElement from "../../helper/CreateElement.js"
 import {realtimeDate} from "../../utils/realtimeDate.js"
+import Profile from "./Profile/Profile.js"
 
 function Home(container) {
 const sampleText = new CreateElement();
@@ -13,15 +14,15 @@ const bodyDiv = sampleText.div(secDiv, "", [
 ])
 
 const contentDiv = sampleText.div(bodyDiv, "", [
-  "border",
   "w-full",
    "max-h-[80vh]",
    "h-[80vh]",
-   "overflow-y-scroll"
+   "hover:overflow-y-scroll",
+   "overflow-y-hidden"
 ]);
 
-const home = sampleText.div(contentDiv,"",["h-[100vh]","flex","justify-center","items-center"]);
-home.textContent = "Home Content";
+const home = sampleText.div(contentDiv,"",["h-full","flex","flex-col","gap-2"]);
+Profile(home);
 
 const footerDiv = sampleText.div(secDiv,"",[
 	"p-3",
